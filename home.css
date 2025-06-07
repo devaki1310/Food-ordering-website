@@ -1,0 +1,206 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #fffaf5;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Header */
+    header {
+      background-color: #ff7043;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo h1 {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+      background-color: #ff5722;
+    }
+    /* Banner */
+    .banner {
+      position: relative;
+      text-align: center;
+      padding: 100px 20px;
+      overflow: hidden;
+      color: white;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .background-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.9;
+      filter: brightness(0.8);
+    }
+    .banner h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    .banner p {
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px rgba(0,0,0,0.5);
+    }
+    .order-btn {
+      background-color: #ff5722;
+      padding: 12px 24px;
+      color: white;
+      border: none;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 10px rgba(255,87,34,0.5);
+    }
+    .order-btn:hover {
+      background-color: #e64a19;
+      box-shadow: 0 6px 16px rgba(230,74,25,0.7);
+    }
+    /* Services Section */
+    .services {
+      padding: 60px 40px;
+      background-color: #f3f6f9;
+      text-align: center;
+    }
+    .services h2 {
+      font-size: 36px;
+      color: #444;
+      margin-bottom: 50px;
+      letter-spacing: 1.2px;
+    }
+    /* Grid container */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    /* Each service card - same color for all */
+    .service-box {
+      padding: 30px 25px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #ff7043, #ff8a65);
+      color: white;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    /* Hover effect */
+    .service-box:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+    }
+    .service-box h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+    .service-box p {
+      font-size: 16px;
+      line-height: 1.4;
+      text-shadow: 0 0 3px rgba(0,0,0,0.1);
+    }
+    /* Welcome Section */
+    .welcome {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #fff3e0;
+    }
+    .welcome h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #bf360c;
+      letter-spacing: 1px;
+    }
+    .welcome p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #5d4037;
+    }
+    .btn {
+      background-color: #ff7043;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(255,112,67,0.5);
+    }
+    .btn:hover {
+      background-color: #d84315;
+      box-shadow: 0 8px 20px rgba(216,67,21,0.7);
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .banner h2 {
+        font-size: 28px;
+      }
+      .banner p {
+        font-size: 16px;
+      }
+      .services h2, .welcome h2 {
+        font-size: 28px;
+      }
+      .service-box h3 {
+        font-size: 20px;
+      }
+      .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
+    }
+    .map-section {
+  padding: 50px 20px;
+  background-color: #fceee8;
+  text-align: center;
+}
+
+.map-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #bf360c;
+}
+
+.map-section p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #5d4037;
+}
+  

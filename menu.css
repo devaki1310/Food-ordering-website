@@ -1,0 +1,113 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Menu Section */
+.menu {
+    padding: 40px;
+}
+
+.menu h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Menu Grid */
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Ensures two rows with five items each */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Menu Items */
+.menu-item {
+    width: 230px;
+    height: 320px;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #444;
+}
+
+.menu-item span {
+    font-size: 16px;
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.menu-item button {
+    background: orange;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu-item button:hover {
+    background: #d35400;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer-content div {
+    margin: 5px 0;
+}
+
+/* Responsive for Smaller Screens */
+@media (max-width: 1000px) {
+    .menu-container {
+        grid-template-columns: repeat(3, 1fr); /* Adjusts to 3 columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr); /* Adjusts to 2 columns */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-container {
+        grid-template-columns: repeat(1, 1fr); /* Adjusts to 1 column */
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Delicious Food Ordering</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <!-- Order Section -->
+    <section class="order">
+        <h2>Place Your Order</h2>
+            
+
+            <div class="input-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="input-group">
+                <label for="address">Delivery Address:</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter delivery address" required></textarea>
+            </div>
+
+            <div class="input-group">
+                <label for="food">Select Food Item:</label>
+                <select id="food" name="food">
+                    <option value="Veg Pulao">Veg Pulao</option>
+                    <option value="Pizza">Pizza</option>
+                    <option value="Paneer">Paneer</option>
+                    <option value="Burger">Burger</option>
+                    <option value="Veg Roll">Veg Roll</option>
+                    <option value="Pasta">Pasta</option>
+                    <option value="Manchurian">Manchurian</option>
+                    <option value="Dal Tadka">Dal Tadka</option>
+                    <option value="Samosa">Samosa</option>
+                    <option value="Sandwich">Sandwich</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            </div>
+
+            <div class="input-group">
+                <label for="payment">Payment Method:</label>
+                <select id="payment" name="payment">
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                    <option value="UPI">UPI</option>
+                    <option value="Credit/Debit Card">Credit/Debit Card</option>
+                </select>
+            </div>
+
+            <button type="submit" class="order-btn">Place Order</button>
+       
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>📍 Contact us: 91-8178154762 | 📍 Address: Old Vidi Gharkul Solapur-4130078</p>
+    </footer>
+</body>
+</html>
